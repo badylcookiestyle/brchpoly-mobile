@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    tools:context=".NewBoardActivity">
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="578dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Board name"
+            android:textColor="#EEEEEEEE" />
+
+        <EditText
+            android:id="@+id/boardName"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:scrollbarThumbHorizontal="@android:drawable/bottom_bar"
+            android:text="Board name"
+            android:textColor="#EEEEEEEE"
+            android:textColorHighlight="#EEEEEEEE"
+            android:textColorHint="#EEEEEEEE"
+            android:textColorLink="#EEEEEEEE" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starting balance"
+            android:textColor="#EEEEEEEE" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#EEEEEEEE"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary"
+            android:textColor="#EEEEEEEE" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#EEEEEEEE"
+            android:inputType="number" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select amount of players"
+                android:textColor="#FFFFFF" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="2 players"
+                android:textColor="#EEEEEEEE" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="3 players"
+                android:textColor="#EEEEEEEE" />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+
+                android:text="4 players"
+                android:textColor="#EEEEEEEE" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/player1Div"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <EditText
+                android:id="@+id/player1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="#EEEEEEEE" />
+
+            <Button
+                android:id="@+id/player1Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="#CF0D0D"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2Div"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <EditText
+                android:id="@+id/player2Name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="#EEEEEEEE" />
+
+            <Button
+                android:id="@+id/player2Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#EEEEEEEE"
+                app:backgroundTint="#EEEEEEEE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player3Div"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <EditText
+                android:id="@+id/player3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="#EEEEEEEE" />
+
+            <Button
+                android:id="@+id/player3Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#EEEEEEEE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player4Div"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <EditText
+                android:id="@+id/player4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="#EEEEEEEE" />
+
+            <Button
+                android:id="@+id/player4Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#EEEEEEEE" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

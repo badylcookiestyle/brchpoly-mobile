@@ -1,0 +1,2 @@
+rootProject.name = "brchpoly-mobile"
+include ':app'
