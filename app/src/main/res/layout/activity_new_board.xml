@@ -51,8 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textColor="#EEEEEEEE"
-            android:inputType="number" />
+            android:inputType="number"
+
+            android:maxLength="7"
+            android:textColor="#EEEEEEEE" />
 
         <TextView
             android:id="@+id/textView5"
@@ -66,16 +68,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textColor="#EEEEEEEE"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="7"
+            android:textColor="#EEEEEEEE" />
 
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Select amount of players"
-                android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select amount of players"
+            android:textColor="#FFFFFF" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -124,7 +127,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Name 1"
                 android:textColor="#EEEEEEEE" />
 
             <Button
@@ -152,7 +155,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Name 2"
                 android:textColor="#EEEEEEEE" />
 
             <Button
@@ -179,7 +182,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Name 3"
                 android:textColor="#EEEEEEEE" />
 
             <Button
@@ -205,7 +208,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Name 4"
                 android:textColor="#EEEEEEEE" />
 
             <Button
@@ -214,6 +217,26 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#EEEEEEEE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/randomColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="random colors" />
+
+            <Button
+                android:id="@+id/createBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="create board" />
         </LinearLayout>
 
     </LinearLayout>
